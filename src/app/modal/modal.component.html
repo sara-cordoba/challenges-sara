@@ -1,0 +1,12 @@
+<div class="modal-overlay" *ngIf="isOpen" (click)="closeModal()"></div>
+<div class="modal" *ngIf="isOpen">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>{{ title }}</h2>
+    <ng-container *ngIf="title === 'Profile Card'">
+        <app-profile-card></app-profile-card>
+      </ng-container>
+    <p>{{ content }}</p>
+  </div>
+</div>
+

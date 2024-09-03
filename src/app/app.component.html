@@ -5,67 +5,23 @@
 
 <div class="container">
   <div class="card-group">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Profile Card</h5>
-      <span>Day 1</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
+    <div class="card" style="width: 18rem;" *ngFor="let challenge of challenges">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ challenge.title }}</h5>
+        <span>{{ challenge.day }}</span>
+        <p class="card-text">{{ challenge.description }}</p>
+        <a href="#" class="btn btn-primary" (click)="openChallenge(challenge.title, challenge.content)">Open Challenge</a>
+      </div>
     </div>
   </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Add To Bag</h5>
-      <span>Day 2</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Mobile Navigation</h5>
-      <span>Day 3</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Contact Us</h5>
-      <span>Day 4</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Recipe</h5>
-      <span>Day 5</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Image Carousel</h5>
-      <span>Day 6</span>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Open Challenge</a>
-    </div>
-  </div>
-
 </div>
-</div>
+
+<app-modal 
+  [isOpen]="isModalOpen" 
+  [title]="modalTitle" 
+  [content]="modalContent"
+  (modalClosed)="onModalClosed()">
+</app-modal>
 
 <router-outlet />
