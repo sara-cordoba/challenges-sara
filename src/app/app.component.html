@@ -6,7 +6,7 @@
 <div class="container">
   <div class="card-group">
     <div class="card" style="width: 18rem;" *ngFor="let challenge of challenges">
-      <img src="..." class="card-img-top" alt="...">
+      <img [src]="challenge.image" class="card-img-top" alt="{{ challenge.title }}">
       <div class="card-body">
         <h5 class="card-title">{{ challenge.title }}</h5>
         <span>{{ challenge.day }}</span>

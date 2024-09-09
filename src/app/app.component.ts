@@ -21,7 +21,8 @@ export class AppComponent {
       title: 'Profile Card',
       day: 'Day 1',
       description: 'Create a profile card with animations and stylish layout.',
-      content: 'Detailed content of the Profile Card challenge...'
+      content: 'Detailed content of the Profile Card challenge...',
+      image: '/src/assets/profile-card/front-card.png'
     },
     {
       title: 'Add To Bag',
