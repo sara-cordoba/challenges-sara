@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, ModalComponent, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'challenges-sara';
@@ -22,38 +22,43 @@ export class AppComponent {
       day: 'Day 1',
       description: 'Create a profile card with animations and stylish layout.',
       content: 'Detailed content of the Profile Card challenge...',
-      image: '/src/assets/profile-card/front-card.png'
+      image: 'assets/profile-card/front-card.png',
     },
     {
       title: 'Add To Bag',
       day: 'Day 2',
       description: 'Develop an Add To Bag button with interactive feedback.',
-      content: 'Detailed content of the Add To Bag challenge...'
+      content: 'Detailed content of the Add To Bag challenge...',
+      image: 'assets/add-to-bag/profile-add.png',
     },
     {
       title: 'Mobile Navigation',
       day: 'Day 3',
-      description: 'Implement a mobile navigation menu with smooth transitions.',
-      content: 'Detailed content of the Mobile Navigation challenge...'
+      description:
+        'Implement a mobile navigation menu with smooth transitions.',
+      content: 'Detailed content of the Mobile Navigation challenge...',
     },
     {
       title: 'Contact Us',
       day: 'Day 4',
-      description: 'Build a Contact Us form with validation and user-friendly UI.',
-      content: 'Detailed content of the Contact Us challenge...'
+      description:
+        'Build a Contact Us form with validation and user-friendly UI.',
+      content: 'Detailed content of the Contact Us challenge...',
     },
     {
       title: 'Recipe',
       day: 'Day 5',
-      description: 'Create a recipe page with organized layout and clear instructions.',
-      content: 'Detailed content of the Recipe challenge...'
+      description:
+        'Create a recipe page with organized layout and clear instructions.',
+      content: 'Detailed content of the Recipe challenge...',
     },
     {
       title: 'Image Carousel',
       day: 'Day 6',
-      description: 'Design an image carousel with smooth animations and controls.',
-      content: 'Detailed content of the Image Carousel challenge...'
-    }
+      description:
+        'Design an image carousel with smooth animations and controls.',
+      content: 'Detailed content of the Image Carousel challenge...',
+    },
   ];
 
   openChallenge(title: string, content: string) {
@@ -63,6 +68,6 @@ export class AppComponent {
   }
 
   onModalClosed() {
-    this.isModalOpen = false; 
+    this.isModalOpen = false;
   }
 }

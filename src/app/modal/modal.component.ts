@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ProfileCardComponent } from '../challenges/profile-card/profile-card.component';
+import { AddToBagComponent } from '../challenges/add-to-bag/add-to-bag.component';
 
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [CommonModule,ProfileCardComponent],
+  imports: [CommonModule,ProfileCardComponent, AddToBagComponent],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.scss'
 })
