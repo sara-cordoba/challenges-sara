@@ -45,6 +45,7 @@ export class AppComponent {
       description:
         'Build a Contact Us form with validation and user-friendly UI.',
       content: 'Detailed content of the Contact Us challenge...',
+      image: 'assets/contact-us/profile-card-contact.png',
     },
     {
       title: 'Recipe',

@@ -3,6 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ProfileCardComponent } from '../challenges/profile-card/profile-card.component';
 import { AddToBagComponent } from '../challenges/add-to-bag/add-to-bag.component';
 import { MobileNavigationComponent } from '../challenges/mobile-navigation/mobile-navigation.component';
+import { ContactUsComponent } from '../challenges/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-modal',
@@ -12,6 +13,7 @@ import { MobileNavigationComponent } from '../challenges/mobile-navigation/mobil
     ProfileCardComponent,
     AddToBagComponent,
     MobileNavigationComponent,
+    ContactUsComponent,
   ],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.scss',
