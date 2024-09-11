@@ -1,0 +1,85 @@
+.general{
+    background: #fff;
+    width: 360px;
+    height: 705px;
+    margin-top: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 5px #003B6F;
+    list-style: none;
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 290px;
+        position: relative;
+        left: 30px;
+        margin: 30px 20px 30px 20px;;
+        cursor: pointer; 
+        font-weight: 600;
+
+        &:hover{
+            color: #003B6F;
+        }
+    }
+}
+
+hr{
+    width: 90%;
+}
+
+.header{
+    display:flex;
+        
+    .doctor{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        border-radius: 60px;
+        object-fit: cover;
+        box-shadow: 0 0 15px 1px #b9b9b9;
+    }
+
+    .name-description{
+        margin: 15px;
+
+        h3{
+            margin-bottom: 5px;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.options-menu{
+ }   
+    
+.icon{
+    position: fixed;
+    padding: 0px 12px 0px 12px;
+    width: 22px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(24%) sepia(22%) saturate(2815%) hue-rotate(179deg) brightness(93%) contrast(98%);
+}
+
+
+.settings{
+    
+}
+
+.nav{
+    top: 96px;
+    position: relative;  
+    cursor: pointer;
+
+    .icons-nav{
+        display: flex;
+        justify-content: space-around;
+        filter: brightness(0) saturate(100%) invert(24%) sepia(22%) saturate(2815%) hue-rotate(179deg) brightness(93%) contrast(98%);
+    }
+}
+
+
+

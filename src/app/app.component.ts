@@ -37,6 +37,7 @@ export class AppComponent {
       description:
         'Implement a mobile navigation menu with smooth transitions.',
       content: 'Detailed content of the Mobile Navigation challenge...',
+      image: 'assets/mobile-navigation/card-doctor.png',
     },
     {
       title: 'Contact Us',
