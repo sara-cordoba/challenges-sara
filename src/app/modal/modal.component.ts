@@ -4,6 +4,7 @@ import { ProfileCardComponent } from '../challenges/profile-card/profile-card.co
 import { AddToBagComponent } from '../challenges/add-to-bag/add-to-bag.component';
 import { MobileNavigationComponent } from '../challenges/mobile-navigation/mobile-navigation.component';
 import { ContactUsComponent } from '../challenges/contact-us/contact-us.component';
+import { RecipeComponent } from '../challenges/recipe/recipe.component';
 
 @Component({
   selector: 'app-modal',
@@ -14,6 +15,7 @@ import { ContactUsComponent } from '../challenges/contact-us/contact-us.componen
     AddToBagComponent,
     MobileNavigationComponent,
     ContactUsComponent,
+    RecipeComponent,
   ],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.scss',
