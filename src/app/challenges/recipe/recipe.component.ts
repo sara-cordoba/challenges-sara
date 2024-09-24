@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-recipe',
   standalone: true,
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './recipe.component.html',
-  styleUrl: './recipe.component.scss'
+  styleUrl: './recipe.component.scss',
 })
-export class RecipeComponent {
-
-}
+export class RecipeComponent {}

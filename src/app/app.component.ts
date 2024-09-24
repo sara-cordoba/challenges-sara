@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ModalComponent } from './modal/modal.component';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ModalComponent, CommonModule],
+  imports: [RouterOutlet, ModalComponent, CommonModule, FontAwesomeModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -53,6 +54,7 @@ export class AppComponent {
       description:
         'Create a recipe page with organized layout and clear instructions.',
       content: 'Detailed content of the Recipe challenge...',
+      image: 'assets/recipe/profile-recipe.png',
     },
     {
       title: 'Image Carousel',

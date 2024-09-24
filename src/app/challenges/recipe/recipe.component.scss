@@ -10,6 +10,12 @@
     h5{
         text-transform: uppercase;
         margin: 10px 0px 10px 0px;
+        font-weight: 900;
+    }
+
+    h6 {
+        text-transform: uppercase;
+        margin: 0;
     }
 
     .peppers{
@@ -22,31 +28,66 @@
     }
        
     .title{
+        width: 450px;
         background: whitesmoke;
         position: relative;
-        top: 40px;
-        right: 140px;
+        top: 50px;
+        right: 185px;
         padding: 15px;
         border-radius: 3px;
 
+        .fa-ghost{
+            margin-right: 5px;
+            color: #d2691e8a;
+        }
+
         h1{
             margin: 5px 0px 0px 0px;
+        }
+
+        .likes{
+            position: relative;
+            bottom: 1px;
+            font-size: 12px;
+            font-weight: 700;
         }
     }
 
     .description{
         font-style: italic;
+        font-weight: 600;
     }
 
     .recipe{
-        margin-top: 100px;
-        padding: 10px;
+        margin-top: 50px;
+        padding: 16px;
+
+        p{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 700;
+            color: #d2691e8a;;
+        }
+    }
+
+    .recipe-time{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row; 
+        align-items: center;
+
+        .display{
+            display: flex;
+            margin: 0px 40px 0px 7px;
+            flex-direction: column;  
+        }
     }
 
     .ingredients{
         margin-top: 40px;
         li{
             list-style: none;
+            margin: 5px 0px 5px 0px;
         }
     }
 
@@ -54,6 +95,26 @@
         margin-top: 30px;
         li{
             list-style-type: decimal;
+            margin: 5px 0px 5px 0px;
+        }
+    }
+
+    .label-footer{
+        background: #000;
+        color: #fff;
+        height: 50px;
+        padding: 10px;
+        position: absolute;
+        left: 8px;
+        bottom: 50px;
+        border-radius: 0px 3px 3px 0px;
+
+        h2{
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            width: 180px;  
+            margin: 0;
         }
     }
 }
