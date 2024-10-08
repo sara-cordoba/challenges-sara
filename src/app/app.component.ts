@@ -62,6 +62,7 @@ export class AppComponent {
       description:
         'Design an image carousel with smooth animations and controls.',
       content: 'Detailed content of the Image Carousel challenge...',
+      image: 'assets/carousel/profile-carousel.png',
     },
   ];
 
